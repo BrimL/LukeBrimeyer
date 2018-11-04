@@ -1,0 +1,41 @@
+:root {
+  font-size: 16px;
+}
+
+
+
+.Heading{
+  color: #2D3142;
+}
+.SubHeading {
+  color: #4F5D75;
+}
+.Content {
+  color: #2D3142;
+}
+
+.Link,
+.Link:visited {
+  color: #4F5D75;
+  margin: .25rem;
+}
+
+.Link:active,
+.Link:hover,
+.Link:focus {
+  color: #EF8354;
+}
+
+.Wrapper {
+  padding: 0 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 256px;
+  width: 50%;
+}
+
+.Footer {
+  text-align: center;
+}
