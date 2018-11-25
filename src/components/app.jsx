@@ -3,6 +3,7 @@ import { h, Component, render } from 'preact';
 
 // Local
 import GoogleAnalyticsService from '../services/GoogleAnalyticsService.jsx';
+import Link from './Link.jsx';
 
 // Stylesheets
 import styles from './app.css';
@@ -51,27 +52,8 @@ const Blurb = () => (
 
 const Footer = () => (
   <div class={styles.Footer}>
-    { SocialMediaLinks.map(socialLink => <SocialLink { ...socialLink } />) }
+    { SocialMediaLinks.map(socialLink => <Link { ...socialLink } />) }
   </div>
 );
-
-class SocialLink extends Component {
-  onClickHandler = () => GoogleAnalyticsService.trackEvent(['contact', this.props.title]);
-
-  render(props) {
-    return (
-      <div class={styles.LinkWrapper}>
-        <a
-          class={styles.Link}
-          href={props.url}
-          onClick={this.onClickHandler}
-          target='_blank'
-        >
-          {props.title}
-        </a>
-      </div>
-    );
-  }
-}
 
 export default LandingPage;

@@ -8,8 +8,7 @@ body {
   background-color: offWhiteColor;
 }
 
-.HeaderGroup {
-}
+.HeaderGroup {}
 
 .Heading{
   color: almostBlackColor;
@@ -29,18 +28,6 @@ body {
   margin: .25rem;
 }
 
-.Link:active,
-.Link:hover,
-.Link:focus {
-  text-shadow: 3px 2px 2px orangeColor, 0px -1px 3px blueColor,-3px 0px 2px greenColor;
-  animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
-}
-
-.LinkWrapper {
-  display: inline-block;
-  width: 50%;
-}
-
 .Wrapper {
   padding: 0 32px;
   position: absolute;
@@ -53,20 +40,4 @@ body {
 
 .Footer {
   text-align: center;
-}
-
-@keyframes pulse {
-    0%{ opacity:.9;transform: skewX(.5deg);}
-    25%{ opacity:1;}
-    50%{opacity:.9;}
-    75%{ opacity:1; transform:skewX(.5deg);}
-    100%{opacity:.9;}
-}
-
-@keyframes chromaticMove {
-    0%{text-shadow: 2px 2px 2px orangeColor, 0px -1px 3px blueColor,0px 0px -2px greenColor;}
-    25%{text-shadow: 2px 1px 1px orangeColor, 0px -2px 3px blueColor,-3px 1px -1px greenColor;}
-    50%{text-shadow: 2px 2px 1px orangeColor, 0px -3px 4px blueColor,-3px 0px 0px greenColor;}
-    75%{text-shadow: 2px 1px 1px orangeColor, 0px -2px 3px blueColor,-3px 1px -1px greenColor;}
-    100%{text-shadow: 2px 2px 2px orangeColor, 0px -1px 3px blueColor,2px -1px 2px greenColor;}
 }
