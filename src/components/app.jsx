@@ -40,7 +40,7 @@ class LandingPage extends Component {
 
 const Blurb = () => (
   <section>
-    <hgroup>
+    <hgroup class={styles.HeaderGroup}>
       <h2 class={styles.Heading}>Hey there!</h2>
       <h4 class={styles.SubHeading}>My name is Luke.</h4>
     </hgroup>
@@ -60,14 +60,16 @@ class SocialLink extends Component {
 
   render(props) {
     return (
-      <a
-        class={styles.Link}
-        href={props.url}
-        onClick={this.onClickHandler}
-        target='_blank'
-      >
-        {props.title}
-      </a>
+      <div class={styles.LinkWrapper}>
+        <a
+          class={styles.Link}
+          href={props.url}
+          onClick={this.onClickHandler}
+          target='_blank'
+        >
+          {props.title}
+        </a>
+      </div>
     );
   }
 }
