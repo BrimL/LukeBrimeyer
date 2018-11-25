@@ -1,0 +1,31 @@
+/* Almost Black Collection, based on a 5% deviation of saturation */
+@value lessAlmostBlackColor: #3A3A3A;
+@value almostBlackColor: #39393A;
+@value moreAlmostBlackColor: #336363A;
+@value mostAlmostBlackColor: #33333A;
+
+/* White Color Collection, based on 5% deviation of saturation */
+@value offWhiteColor: #E6E6E6;
+@value moreOffWhiteColor: #E5DADA;
+@value mostOffWhiteColor: #E5CECE;
+
+/* Green Accent Collection, based on 5% deviation of saturation*/
+@value leastGreenColor: #56AF75;
+@value lessGreenColor: #4DAF6F;
+@value greenColor: #44AF69;
+@value moreGreenColor: #3BAF64;
+@value mostGreenColor: #33AF5E;
+
+/* Blue Accent Collection, based on 5% deviation of saturation*/
+@value leastBlueColor: #6DF2F2;
+@value lessBlueColor: #60F2F2;
+@value blueColor: #54F2F2;
+@value moreBlueColor: #48F2F2;
+@value mostBlueColor: #3CF2F2;
+
+/* Orange Accent Collection, based on 5% deviation of saturation*/
+@value leastOrangeColor: #FF976B;
+@value lessOrangeColor: #FF8E5E;
+@value orangeColor: #FF8552;
+@value moreOrangeColor: #FF7C44;
+@value mostOrangeColor: #FF7338;
